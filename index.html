@@ -3,16 +3,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
     <title>Partner site</title>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?113"></script>
+	<script type="text/javascript">
+		VK.init({apiId: 4416864, onlyWidgets: true});
+	</script>
 </head>
 <body>
 Hello World!
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fc0d71153d4d3c"></script>
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fc0d71153d4d3c"></script>-->
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <!--<div class="addthis_sharing_toolbox"></div>
  -->
 
 
+<div id="vk_like"></div>
+<script type="text/javascript">
+	VK.Widgets.Like("vk_like", {type: "button"});
+	VK.Observer.subscribe("widgets.like.shared", function f() {
+		alert('Молодец!');
+	});
+</script>
+
+
 </body>
 </html>
+
