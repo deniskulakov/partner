@@ -10,23 +10,15 @@
 </head>
 <body>
 Hello World!
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fc0d71153d4d3c">
-</script>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<!--<div class="addthis_sharing_toolbox"></div>
- -->
-
-
+<!-- Put this div tag to the place, where the Like block will be -->
 <div id="vk_like"></div>
 <script type="text/javascript">
-	VK.Widgets.Like("vk_like", {type: "button"});
+	VK.Widgets.Like("vk_like", {type: "button", verb: 1, height: 24});
 	VK.Observer.subscribe("widgets.like.shared", function f() {
-		alert('Молодец!');
-	});
+			alert('Молодец!');
+		});
 </script>
-
 
 </body>
 </html>
